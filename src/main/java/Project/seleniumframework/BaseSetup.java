@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseSetup {
 	
 	
-	 public static void main(String[] args) {
+	 public static void main(String[] args) throws InterruptedException {
 		
 		HashMap<String, String> map = new HashMap<String, String>();
 		 
@@ -56,6 +56,7 @@ public class BaseSetup {
 			System.out.println();
 			System.out.println();
 			System.out.println(st);
+			Thread.sleep(3000);
 			driver.switchTo().window(st);
 			
 			
